@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {HttpHeaders} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit {
 
   APP_ENV:string = "DEV";
   API_URL:string = "";
+  TOKEN:string = "jesuistokenahahahha"
 
   ngOnInit() {
 
@@ -32,8 +34,14 @@ export class AppComponent implements OnInit {
   *
   * */
 
-  createCors(){
+  createCors():{ headers: HttpHeaders} {
+    const headers: HttpHeaders = new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded',
+      // 'Authorisation': 'Bearer ' + this.TOKEN,
+    })
+    const options: {headers: HttpHeaders} = { headers: headers };
 
+    return options;
   }
 
 

@@ -11,6 +11,9 @@ import { NavbarComponent } from './global/navbar/navbar.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { PokemonlistComponent } from './page-pokemons/pokemonlist/pokemonlist.component';
 import {HttpClientModule} from "@angular/common/http";
+import { PokemondetailComponent } from './page-pokemons/pokemondetail/pokemondetail.component';
+import { FormcreateComponent } from './page-form/formcreate/formcreate.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import {HttpClientModule} from "@angular/common/http";
     Page404Component,
     NavbarComponent,
     FooterComponent,
-    PokemonlistComponent
+    PokemonlistComponent,
+    PokemondetailComponent,
+    FormcreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

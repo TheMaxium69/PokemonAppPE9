@@ -1,0 +1,13 @@
+<div>
+  <ng-container *ngFor="let pokemonOne of this.pokemonList">
+    <div class="card" style="width: 18rem;">
+      <img src="{{ pokemonOne.picture }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ pokemonOne.name }}</h5>
+        <p class="card-text"> hp : {{ pokemonOne.hp }} |  Cp : {{ pokemonOne.cp }}</p>
+        <a routerLink="{{ pokemonOne.id }}" class="btn btn-primary">Afficher</a>
+        <a class="btn btn-danger">delete</a>
+      </div>
+    </div>
+  </ng-container>
+</div>

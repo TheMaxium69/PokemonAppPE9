@@ -1,0 +1,19 @@
+<ng-container *ngIf="!this.isDB">
+
+  <h2 style="color: red">Excuse frerot ya rien dans le db</h2>
+
+</ng-container>
+
+<ng-container *ngIf="this.isDB && pokemonOne">
+
+
+  <img src="{{ pokemonOne.picture }}">
+  <h2>Nom : {{ pokemonOne.name }}</h2>
+  <p>hp :{{ pokemonOne.hp }}</p>
+  <p>cp :{{ pokemonOne.cp }}</p>
+
+
+  <button class="btn btn-danger"> Delete</button>
+
+
+</ng-container>

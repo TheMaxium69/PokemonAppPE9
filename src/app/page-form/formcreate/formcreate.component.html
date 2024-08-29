@@ -1,0 +1,11 @@
+<form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+
+  <input type="text" name="name" placeholder="Nom" ngModel required>
+  <input type="number" name="hp" placeholder="HP" ngModel required>
+  <input type="number" name="cp" placeholder="CP" ngModel required>
+  <input type="text" name="types" placeholder="TYPES" ngModel required>
+  <input type="text" name="picture" placeholder="Url picture" ngModel required>
+
+  <input type="submit" value="Créer">
+
+</form>

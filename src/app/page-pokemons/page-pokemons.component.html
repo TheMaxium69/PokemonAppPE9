@@ -1,0 +1,9 @@
+<h1> Vous êtes sur la page des pokemons</h1>
+
+<ng-container *ngIf="this.isDetail">
+  <app-pokemondetail></app-pokemondetail>
+</ng-container>
+
+<ng-container *ngIf="!this.isDetail">
+  <app-pokemonlist></app-pokemonlist>
+</ng-container>
