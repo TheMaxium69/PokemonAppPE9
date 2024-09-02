@@ -1,0 +1,14 @@
+<button class="btn btn-success" (click)="uploadToken()">Envoyé le token</button>
+
+
+<ng-container *ngIf="isResult && isCorrect">
+
+  <p> Votre token a bien été envoyé correctement</p>
+
+</ng-container>
+
+<ng-container *ngIf="isResult && !isCorrect">
+
+  <p>un problème lors de l'envoie du token</p>
+
+</ng-container>

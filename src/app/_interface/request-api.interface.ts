@@ -1,7 +1,8 @@
 export interface RequestApiInterface {
-    true:string|undefined
-    err:string|undefined
-    userApi:string|undefined
+  true:string|undefined
+  err:string|undefined
+  userApi:string|undefined
+  Token:string|undefined
 }
 
 /*
@@ -10,5 +11,9 @@ export interface RequestApiInterface {
 
 
 {"true":"Pokemon Create"}
+
+{
+    "Token": "jdeisdfhoizhfgbiefhfmzahfefjbhgmojhezj"
+}
 
 */

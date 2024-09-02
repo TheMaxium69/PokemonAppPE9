@@ -23,5 +23,8 @@ export class PokemonService {
     return this.http.post<RequestApiInterface>(url + "&task=createPokemon&userApi=joke", body, headers);
   }
 
+  deletePokemon(url:string, id:number): Observable<RequestApiInterface>{
+    return this.http.get<RequestApiInterface>(url + "&task=deletePokemon&userApi=joke&id=" + id)
+  }
 
 }

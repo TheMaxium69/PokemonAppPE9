@@ -14,6 +14,8 @@ import {HttpClientModule} from "@angular/common/http";
 import { PokemondetailComponent } from './page-pokemons/pokemondetail/pokemondetail.component';
 import { FormcreateComponent } from './page-form/formcreate/formcreate.component';
 import {FormsModule} from "@angular/forms";
+import { UploadtokenComponent } from './page-home/uploadtoken/uploadtoken.component';
+import { PokemondeleteComponent } from './page-pokemons/pokemondelete/pokemondelete.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     PokemonlistComponent,
     PokemondetailComponent,
-    FormcreateComponent
+    FormcreateComponent,
+    UploadtokenComponent,
+    PokemondeleteComponent
   ],
   imports: [
     BrowserModule,

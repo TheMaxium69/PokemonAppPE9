@@ -9,14 +9,20 @@ import {ActivatedRoute} from "@angular/router";
 export class PagePokemonsComponent implements OnInit{
 
   isDetail:boolean = false;
+  isDelete:boolean = false;
 
   constructor(private route:ActivatedRoute) {}
 
   ngOnInit() {
     let idRoute =this.route.snapshot.params['id']
+    let taskRoute =this.route.snapshot.params['task']
 
     if (idRoute != undefined){
-      this.isDetail = true;
+      if (taskRoute == "delete"){
+        this.isDelete = true
+      } else {
+        this.isDetail = true;
+      }
     }
 
   }

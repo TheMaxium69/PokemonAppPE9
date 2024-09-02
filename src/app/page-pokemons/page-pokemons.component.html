@@ -4,6 +4,12 @@
   <app-pokemondetail></app-pokemondetail>
 </ng-container>
 
-<ng-container *ngIf="!this.isDetail">
+<ng-container *ngIf="this.isDelete">
+  <app-pokemondelete></app-pokemondelete>
+</ng-container>
+
+<ng-container *ngIf="!this.isDetail && !this.isDelete">
   <app-pokemonlist></app-pokemonlist>
 </ng-container>
+
+

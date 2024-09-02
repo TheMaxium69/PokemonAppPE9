@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:"home",component:PageHomeComponent},
   {path:"pokemons",component:PagePokemonsComponent},
   {path:"pokemons/:id",component:PagePokemonsComponent},
+  {path:"pokemons/:task/:id",component:PagePokemonsComponent},
   {path:"form",component:PageFormComponent},
   {path:"**",component:Page404Component},
 ];
